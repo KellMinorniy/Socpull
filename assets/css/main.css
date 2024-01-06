@@ -22,13 +22,21 @@ a {
 }
 
 
-.sign-up, .sign-up:hover {
+.sign-up {
     background-color: #FAF4FF;
     color:#764EB2;
     box-shadow: 0px 1px 2px 0px rgba(155, 155, 155, 0.15);
     border-radius: 12px;
     border: 1px solid rgba(0, 0, 0, 0.10);
 }
+
+.sign-up:hover {
+    background-color: #764EB2;
+    color: #FAF4FF;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    transform: translateX(3px);
+    transition: 0.5s;
+} 
 
 .orange {
     color: var(--contrast-color);
@@ -102,6 +110,11 @@ a {
 .stars-block .block {
     position: absolute; 
     width: auto; 
+}
+
+.block:hover {
+    transform: translateY(-5px);
+    transition: 0.4s;
 }
 
 .stars-block .block:nth-child(1) {
@@ -179,11 +192,13 @@ a {
 }
 
 .content {
-    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
 }
 
 .content.show {
-    display: block;
+    max-height: 500px;
 }
 
 .item svg {
