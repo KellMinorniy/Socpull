@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <header class="header w-100 p-2">
+        <div class="nav w-75 m-auto d-flex flex-row justify-content-between align-items-center">
+            <div class="d-flex flex-row align-items-center gap-3">
+                <div class="d-flex align-items-center flex-row gap-1">
+                    <svg class="mt-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none">
+                        <path
+                            d="M19.716 20.362C21.143 19.585 22 18.587 22 17.5C22 16.348 21.037 15.296 19.454 14.5C17.623 13.58 14.962 13 12 13C9.038 13 6.377 13.58 4.546 14.5C2.963 15.296 2 16.348 2 17.5C2 18.652 2.963 19.704 4.546 20.5C6.377 21.42 9.038 22 12 22C15.107 22 17.882 21.363 19.716 20.362Z"
+                            fill="#F85502" fill-opacity="0.4" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M9.25 4C9.25 3.27065 9.53973 2.57118 10.0555 2.05546C10.5712 1.53973 11.2707 1.25 12 1.25C12.7293 1.25 13.4288 1.53973 13.9445 2.05546C14.4603 2.57118 14.75 3.27065 14.75 4C14.75 4.72935 14.4603 5.42882 13.9445 5.94454C13.4288 6.46027 12.7293 6.75 12 6.75C11.2707 6.75 10.5712 6.46027 10.0555 5.94454C9.53973 5.42882 9.25 4.72935 9.25 4Z"
+                            fill="#F85502" />
+                        <path
+                            d="M8.22298 11.5739L6.04798 10.8489C5.67532 10.7259 5.36403 10.4647 5.17833 10.119C4.99262 9.77329 4.94664 9.36952 5.04988 8.99093C5.15312 8.61233 5.39771 8.28779 5.7332 8.08423C6.06869 7.88066 6.4695 7.8136 6.85298 7.89686L8.75098 8.30386L8.96098 8.34786C11.0365 8.77763 13.1796 8.76263 15.249 8.30386L17.146 7.89686C17.5297 7.81274 17.9311 7.87926 18.2672 8.08267C18.6033 8.28608 18.8484 8.61083 18.9519 8.98981C19.0554 9.3688 19.0093 9.77305 18.8232 10.119C18.6371 10.465 18.3252 10.7263 17.952 10.8489L15.777 11.5739C15.514 11.6619 15.383 11.7059 15.284 11.7669C15.1192 11.8685 14.9875 12.0157 14.9047 12.1907C14.822 12.3658 14.7919 12.561 14.818 12.7529C14.834 12.8679 14.884 12.9969 14.983 13.2559L16.23 16.4979C16.3641 16.8446 16.3622 17.2292 16.2245 17.5746C16.0869 17.92 15.8238 18.2005 15.4879 18.36C15.1521 18.5194 14.7684 18.546 14.4137 18.4343C14.0591 18.3226 13.7599 18.081 13.576 17.7579L12 14.9999L10.424 17.7569C10.2401 18.08 9.94083 18.3216 9.58622 18.4333C9.23161 18.545 8.84788 18.5184 8.51203 18.359C8.17618 18.1995 7.91304 17.919 7.77541 17.5736C7.63778 17.2282 7.63584 16.8436 7.76998 16.4969L9.01698 13.2559C9.11698 12.9969 9.16598 12.8679 9.18198 12.7529C9.20808 12.561 9.17794 12.3658 9.09522 12.1907C9.0125 12.0157 8.88076 11.8685 8.71598 11.7669C8.61698 11.7059 8.48598 11.6619 8.22298 11.5739Z"
+                            fill="#F85502" />
+                    </svg>
+                    <span class="text-muted d-flex align-items-center fs-4 fw-medium">Socpull</span>
+                </div>
+                <svg class="d-none d-sm-flex" xmlns="http://www.w3.org/2000/svg" width="2" height="26" viewBox="0 0 2 26" fill="none">
+                    <path d="M1 1V25" stroke="#636363" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <div class="d-sm-flex flex-row align-items-center gap-1 d-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M4.172 3.172C3 4.343 3 6.229 3 10V14C3 17.771 3 19.657 4.172 20.828C5.343 22 7.229 22 11 22H13C16.771 22 18.657 22 19.828 20.828C21 19.657 21 17.771 21 14V10C21 6.229 21 4.343 19.828 3.172C18.657 2 16.771 2 13 2H11C7.229 2 5.343 2 4.172 3.172Z"
+                            fill="#F85502" fill-opacity="0.4" />
+                        <path
+                            d="M6 12C6 10.586 6 9.879 6.44 9.44C6.878 9 7.585 9 9 9H15C16.414 9 17.121 9 17.56 9.44C18 9.879 18 10.586 18 12V16C18 17.414 18 18.121 17.56 18.56C17.121 19 16.414 19 15 19H9C7.586 19 6.879 19 6.44 18.56C6 18.122 6 17.415 6 16V12ZM7 5.25C6.80109 5.25 6.61032 5.32902 6.46967 5.46967C6.32902 5.61032 6.25 5.80109 6.25 6C6.25 6.19891 6.32902 6.38968 6.46967 6.53033C6.61032 6.67098 6.80109 6.75 7 6.75H12C12.1989 6.75 12.3897 6.67098 12.5303 6.53033C12.671 6.38968 12.75 6.19891 12.75 6C12.75 5.80109 12.671 5.61032 12.5303 5.46967C12.3897 5.32902 12.1989 5.25 12 5.25H7Z"
+                            fill="#F85502" />
+                    </svg>
+                    <a href="/services" class="text-secondary fw-medium">Servises</a>
+                </div>
+            </div>
+            <div class="d-flex flex-row align-items-center gap-3">
+                <a href="/login" class="text-black fw-medium d-none d-sm-flex">Login</a>
+                <a href="/reg" class="sign-up btn btn-primary">Sign Up</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- End Header -->
+
+    <div class="container mt-3 d-flex justify-content-center flex-column">
+        <h1 class="text-center fw-bold"><span class="orange">Enhance</span> your social media <br>
+            engagement <span class="orange">with our support.</span></h1>
+        <p class="text-secondary mt-4 text-center">Elevate your online presence and engagement with customized
+            strategies designed to <br> boost visibility and
+            interaction across social platforms.</p>
+        <div class="w-100 d-flex flex-column-reverse flex-sm-column">
+            <button class="btn-container btn btn-primary mt-4"><svg xmlns="http://www.w3.org/2000/svg" width="25"
+                    height="24" viewBox="0 0 25 24" fill="none">
+                    <path
+                        d="M11.4173 6.57502C11.2623 5.90602 11.1303 5.34002 10.9873 4.89502L17.6213 6.82002C17.6653 6.83302 17.7793 6.88302 17.9363 7.29602C18.0903 7.70002 18.2303 8.29302 18.4303 9.15502L18.5503 9.67102C18.5773 9.78502 18.6023 9.89502 18.6293 9.99902L12.6173 8.33302L12.3133 8.16102C11.8833 7.91602 11.8053 7.85902 11.7493 7.78102C11.6873 7.69502 11.6503 7.57502 11.5293 7.05102L11.4173 6.57502ZM14.8423 9.98702L19.8503 11.374L20.1543 11.547C20.8603 11.95 21.3373 12.223 21.6473 12.471C21.9443 12.709 21.9953 12.851 21.9993 12.973C22.0043 13.1 21.9583 13.26 21.6723 13.546C21.3783 13.841 20.9213 14.182 20.2493 14.682L19.8493 14.978C19.6613 15.118 19.4903 15.244 19.3473 15.386L12.5423 13.412L12.9003 13.146C13.5313 12.677 14.0503 12.292 14.4033 11.938C14.7703 11.57 15.0413 11.155 15.0213 10.622C15.014 10.399 14.9526 10.181 14.8423 9.98702ZM11.8743 14.26L18.8863 16.294C18.8573 16.435 18.8343 16.587 18.8093 16.751L18.7283 17.278C18.6513 17.778 18.5373 18.225 18.4163 18.603C18.2033 19.268 18.1483 19.361 17.9883 19.453C17.9203 19.493 17.8553 19.509 17.7193 19.494C17.5533 19.476 17.3403 19.416 16.9773 19.31L11.1833 17.63C11.2533 17.483 11.3083 17.326 11.3543 17.166C11.4993 16.669 11.6043 15.991 11.7333 15.154L11.8083 14.666C11.8353 14.492 11.8563 14.361 11.8743 14.26Z"
+                        fill="white" fill-opacity="0.4" />
+                    <path
+                        d="M7.90524 6.07329C8.47824 5.43429 8.87024 4.99929 9.18624 4.73529C9.50624 4.46929 9.61124 4.49629 9.64424 4.50529C9.68724 4.51829 9.80124 4.56929 9.95924 4.98229C10.1132 5.38629 10.2522 5.97929 10.4532 6.84029L10.5732 7.35629C10.6662 7.75929 10.7432 8.09429 10.9372 8.36429C11.1362 8.64229 11.4252 8.80629 11.7552 8.99429L11.8192 9.02929L12.1762 9.23329C12.8832 9.63629 13.3592 9.90929 13.6692 10.1573C13.9662 10.3953 14.0182 10.5373 14.0222 10.6583C14.0272 10.7863 13.9802 10.9453 13.6952 11.2323C13.4012 11.5273 12.9432 11.8683 12.2712 12.3683L11.8722 12.6643C11.5552 12.8993 11.2882 13.0973 11.1162 13.3923C10.9472 13.6813 10.8962 14.0193 10.8322 14.4373L10.7512 14.9643C10.6142 15.8483 10.5192 16.4603 10.3952 16.8863C10.3252 17.1263 10.2582 17.2593 10.2022 17.3363C10.0942 17.2963 9.94924 17.2363 9.77924 17.1553C9.22762 16.8884 8.71682 16.5442 8.26224 16.1333L7.95024 15.8533L7.93624 15.8403C7.79783 15.7114 7.65438 15.5879 7.50624 15.4703C7.36532 15.358 7.20452 15.2732 7.03224 15.2203C6.70824 15.1263 6.37324 15.1893 6.01224 15.2573L5.93524 15.2713L5.53524 15.3463C4.74124 15.4933 4.21024 15.5893 3.82924 15.5963C3.46324 15.6033 3.38624 15.5243 3.34524 15.4673C3.28724 15.3873 3.23424 15.2313 3.32324 14.7933C3.41224 14.3573 3.61224 13.7763 3.90324 12.9363L4.07524 12.4393C4.21324 12.0393 4.32524 11.7193 4.31224 11.3823C4.29924 11.0423 4.16424 10.7363 3.99724 10.3583L3.78924 9.88829C3.43924 9.09329 3.19824 8.54529 3.07824 8.12629C2.95924 7.71129 2.99624 7.54329 3.05624 7.44129C3.10624 7.35629 3.19524 7.26629 3.55624 7.22129C3.93624 7.17429 4.47124 7.19529 5.27024 7.22929L5.67424 7.24629L5.75024 7.25029C6.11724 7.26629 6.45324 7.28029 6.76524 7.14329C7.06824 7.00929 7.29724 6.75329 7.56024 6.45829L7.61524 6.39729L7.90524 6.07329Z"
+                        fill="white" />
+                </svg>
+                <a href="/reg" class="text-white">Let’s enhance</a>
+            </button>
+            <img src="assets/img/mockup.png" alt="" class="mt-4">
+        </div>
+    </div>
+
+    <!-- End Container Mockup -->
+
+    <div class="social container-fluid pt-4 mt-sm-0 mt-4">
+        <h2 class="text-center mt-4">Promote your social networks effectively.</h2>
+        <p class="text-center text-secondary w-75 m-auto mt-4">Expand reach, boost impact with our proven social network
+            promotion techniques. Elevate profile visibility,
+            and enhance audience connections.</p>
+        <div class="social-block row w-50 m-auto no-gutters d-none d-sm-flex mt-4">
+            <img src="assets/img/YouTube.png" alt="" class="img-fluid col-4 p-1">
+            <img src="assets/img/Insta.png" alt="" class="img-fluid col-4 p-1">
+            <img src="assets/img/X.png" alt="" class="img-fluid col-4 p-1">
+
+            <img src="assets/img/Linkedin.png" alt="" class="img-fluid col-4 mt-1 p-1">
+            <img src="assets/img/Pinterest.png" alt="" class="img-fluid col-4 mt-1 p-1">
+            <img src="assets/img/Facebook.png" alt="" class="img-fluid col-4 mt-1 p-1">
+        </div>
+        <div class="social-mobile row w-100 m-auto d-flex d-sm-none mt-4">
+            <img src="assets/img/YouTubeMobile.png" alt="" class="img-fluid col-6 mt-1 p-1">
+            <img src="assets/img/InstaMobile.png" alt="" class="img-fluid col-6 mt-1 p-1">
+
+            <img src="assets/img/XModile.png" alt="" class="img-fluid col-6 mt-1 p-1">
+            <img src="assets/img/LinkedinMobile.png" alt="" class="img-fluid col-6 mt-1 p-1">
+
+            <img src="assets/img/PinterestMobile.png" alt="" class="img-fluid col-6 mt-1 p-1">
+            <img src="assets/img/FaceBookMobile.png" alt="" class="img-fluid col-6 mt-1 p-1">
+        </div>
+    </div>
+
+    <div class="container-fluid mt-4">
+        <h1 class="text-center mt-4">Services from direct suppliers, the lowest <br> prices on the market!</h1>
+        <p class="text-center text-secondary mt-2">Unbeatable Prices from Manufacturers - Your Direct Source for the
+            Best Deals!</p>
+        <div class="dashboard mt-4"><img src="assets/img/graphic.png" alt="" class="img-fluid mt-4"></div>
+    </div>
+
+    <div class="container mt-4">
+        <h1 class="text-center mt-4">Customer testimonials.</h1>
+        <p class="text-secondary text-center">Discover what our clients have to say about their success stories.</p>
+        <div class="stars-block d-md-flex flex-column">
+            <div class="block  bg-secondary bg-opacity-10 p-2">
+                <h4 class="text-center text-muted fs-3">My Instagram following soared after using your services. Highly recommended!
+                </h4>
+                <p class="mt-4 text-secondary text-center">Sarah C. <span class="binance">CEO Binance</span></p>
+            </div>
+
+            <div class="block  bg-secondary bg-opacity-10 p-2 ">
+                <h4 class="text-center text-muted fs-5">Your direct supplier approach and account database boosted my business.</h4>
+                <p class="mt-4 text-secondary text-center">Alex H.</p>
+            </div>
+
+            <div class="block  bg-secondary bg-opacity-10 p-2  d-none d-md-flex flex-column">
+                <h4 class="text-center text-muted fs-5">Your Tiktok promotion speed and quality surpassed all others.</h4>
+                <p class="mt-4 text-secondary text-center">Alex H.</p>
+            </div>
+
+            <div class="block bg-secondary bg-opacity-10 p-2d-none d-md-flex flex-column">
+                <h4 class="text-center text-muted fs-5">The API support and order status tracking made the process seamless. Great work!
+                </h4>
+                <p class="mt-4 text-secondary text-center">Emily R.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="questions container-fluid m-auto w-75 p-4 mt-4">
+        <h1 class="text-center mt-4">Question? Answers!</h1>
+        <p class="text-muted text-center">Frequently Asked Questions.</p>
+        <div class="menu d-flex flex-column gap-4">
+            <div class="item d-flex flex-row justify-content-between align-items-center m-auto  mt-4">
+                <h4 class="fs-6">What social networks do you offer promotion services for?</h4>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="13" viewBox="0 0 20 13" fill="none">
+                    <path d="M18 2L10 10L2 2" stroke="#232323" stroke-width="3" stroke-linecap="round" />
+                </svg>
+            </div>
+            <div class="content hidden w-75 m-auto">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis corrupti sunt tempora cumque
+                    commodi rem exercitationem ea modi, iste consectetur debitis animi vel impedit molestias nesciunt
+                    delectus maiores asperiores dolor?
+                    Vero sunt assumenda veritatis possimus reprehenderit accusamus voluptates obcaecati ad reiciendis,
+                    corrupti exercitationem laboriosam quibusdam rem, esse consequatur, dolor laudantium maiores aut!
+                    Voluptatum atque corporis animi veniam nihil. Et, odio.
+                    Ut iure, placeat quo doloremque nemo eaque odit quos. Dolores beatae voluptatem non sunt eaque
+                    dignissimos similique ipsam sit obcaecati, inventore porro repellendus suscipit, animi deserunt
+                    expedita, alias magni distinctio.
+                    Tempora temporibus dolore vero non veritatis dolor earum voluptates, repellendus consequuntur sunt
+                    soluta sed neque officia! Nostrum natus reprehenderit quis aspernatur aut non, cum quod consequatur,
+                    voluptas accusantium hic dolorem!
+                    Nisi enim at, molestias tempora repellat culpa excepturi magni, officiis accusamus, quaerat sit ut
+                    non amet perferendis libero distinctio! Molestiae quas reprehenderit maiores ea cum temporibus
+                    perspiciatis doloribus fugiat saepe.
+                    Nam quae iste expedita officia minima porro qui reprehenderit fuga ratione quia aliquid, laudantium
+                    harum rem eligendi earum, itaque sequi molestias molestiae. Aliquid eos praesentium alias obcaecati
+                    voluptatibus. Excepturi, sapiente?
+                    Quo dignissimos architecto reprehenderit ab assumenda velit tempora iste iure. Maiores consequatur
+                    deserunt reprehenderit blanditiis, aliquid accusamus est molestias aperiam, explicabo ipsam quis,
+                    ipsa accusantium dolorum hic eligendi cumque odit?
+                    Repellat, ad est. Aut doloremque dolor iure officia. Itaque vero dolorum distinctio obcaecati natus
+                    earum dolores facilis hic dolor, nam quia provident aut vitae incidunt explicabo eos quidem eum
+                    inventore.</p>
+            </div>
+
+            <div class="item d-flex flex-row justify-content-between align-items-center m-auto  mt-4">
+                <h4 class="fs-6">How quickly can I expect to see results from your promotion services?</h4>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="13" viewBox="0 0 20 13" fill="none">
+                    <path d="M18 2L10 10L2 2" stroke="#232323" stroke-width="3" stroke-linecap="round" />
+                </svg>
+            </div>
+            <div class="content hidden w-75 m-auto">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis corrupti sunt tempora cumque
+                    commodi rem exercitationem ea modi, iste consectetur debitis animi vel impedit molestias nesciunt
+                    delectus maiores asperiores dolor?
+                    Vero sunt assumenda veritatis possimus reprehenderit accusamus voluptates obcaecati ad reiciendis,
+                    corrupti exercitationem laboriosam quibusdam rem, esse consequatur, dolor laudantium maiores aut!
+                    Voluptatum atque corporis animi veniam nihil. Et, odio.
+                    Ut iure, placeat quo doloremque nemo eaque odit quos. Dolores beatae voluptatem non sunt eaque
+                    dignissimos similique ipsam sit obcaecati, inventore porro repellendus suscipit, animi deserunt
+                    expedita, alias magni distinctio.
+                    Tempora temporibus dolore vero non veritatis dolor earum voluptates, repellendus consequuntur sunt
+                    soluta sed neque officia! Nostrum natus reprehenderit quis aspernatur aut non, cum quod consequatur,
+                    voluptas accusantium hic dolorem!
+                    Nisi enim at, molestias tempora repellat culpa excepturi magni, officiis accusamus, quaerat sit ut
+                    non amet perferendis libero distinctio! Molestiae quas reprehenderit maiores ea cum temporibus
+                    perspiciatis doloribus fugiat saepe.
+                    Nam quae iste expedita officia minima porro qui reprehenderit fuga ratione quia aliquid, laudantium
+                    harum rem eligendi earum, itaque sequi molestias molestiae. Aliquid eos praesentium alias obcaecati
+                    voluptatibus. Excepturi, sapiente?
+                    Quo dignissimos architecto reprehenderit ab assumenda velit tempora iste iure. Maiores consequatur
+                    deserunt reprehenderit blanditiis, aliquid accusamus est molestias aperiam, explicabo ipsam quis,
+                    ipsa accusantium dolorum hic eligendi cumque odit?
+                    Repellat, ad est. Aut doloremque dolor iure officia. Itaque vero dolorum distinctio obcaecati natus
+                    earum dolores facilis hic dolor, nam quia provident aut vitae incidunt explicabo eos quidem eum
+                    inventore.</p>
+            </div>
+
+            <div class="item d-flex flex-row justify-content-between align-items-center m-auto  mt-4">
+                <h4 class="fs-6">Is there a risk to the security of my social media profiles when using your services?
+                </h4>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="13" viewBox="0 0 20 13" fill="none">
+                    <path d="M18 2L10 10L2 2" stroke="#232323" stroke-width="3" stroke-linecap="round" />
+                </svg>
+            </div>
+            <div class="content hidden w-75 m-auto">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis corrupti sunt tempora cumque
+                    commodi rem exercitationem ea modi, iste consectetur debitis animi vel impedit molestias nesciunt
+                    delectus maiores asperiores dolor?
+                    Vero sunt assumenda veritatis possimus reprehenderit accusamus voluptates obcaecati ad reiciendis,
+                    corrupti exercitationem laboriosam quibusdam rem, esse consequatur, dolor laudantium maiores aut!
+                    Voluptatum atque corporis animi veniam nihil. Et, odio.
+                    Ut iure, placeat quo doloremque nemo eaque odit quos. Dolores beatae voluptatem non sunt eaque
+                    dignissimos similique ipsam sit obcaecati, inventore porro repellendus suscipit, animi deserunt
+                    expedita, alias magni distinctio.
+                    Tempora temporibus dolore vero non veritatis dolor earum voluptates, repellendus consequuntur sunt
+                    soluta sed neque officia! Nostrum natus reprehenderit quis aspernatur aut non, cum quod consequatur,
+                    voluptas accusantium hic dolorem!
+                    Nisi enim at, molestias tempora repellat culpa excepturi magni, officiis accusamus, quaerat sit ut
+                    non amet perferendis libero distinctio! Molestiae quas reprehenderit maiores ea cum temporibus
+                    perspiciatis doloribus fugiat saepe.
+                    Nam quae iste expedita officia minima porro qui reprehenderit fuga ratione quia aliquid, laudantium
+                    harum rem eligendi earum, itaque sequi molestias molestiae. Aliquid eos praesentium alias obcaecati
+                    voluptatibus. Excepturi, sapiente?
+                    Quo dignissimos architecto reprehenderit ab assumenda velit tempora iste iure. Maiores consequatur
+                    deserunt reprehenderit blanditiis, aliquid accusamus est molestias aperiam, explicabo ipsam quis,
+                    ipsa accusantium dolorum hic eligendi cumque odit?
+                    Repellat, ad est. Aut doloremque dolor iure officia. Itaque vero dolorum distinctio obcaecati natus
+                    earum dolores facilis hic dolor, nam quia provident aut vitae incidunt explicabo eos quidem eum
+                    inventore.</p>
+            </div>
+
+            <div class="item d-flex flex-row justify-content-between align-items-center m-auto  mt-4">
+                <h4 class="fs-6">Can I track the status of my orders and campaigns?</h4>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="13" viewBox="0 0 20 13" fill="none">
+                    <path d="M18 2L10 10L2 2" stroke="#232323" stroke-width="3" stroke-linecap="round" />
+                </svg>
+            </div>
+            <div class="content hidden w-75 m-auto">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis corrupti sunt tempora cumque
+                    commodi rem exercitationem ea modi, iste consectetur debitis animi vel impedit molestias nesciunt
+                    delectus maiores asperiores dolor?
+                    Vero sunt assumenda veritatis possimus reprehenderit accusamus voluptates obcaecati ad reiciendis,
+                    corrupti exercitationem laboriosam quibusdam rem, esse consequatur, dolor laudantium maiores aut!
+                    Voluptatum atque corporis animi veniam nihil. Et, odio.
+                    Ut iure, placeat quo doloremque nemo eaque odit quos. Dolores beatae voluptatem non sunt eaque
+                    dignissimos similique ipsam sit obcaecati, inventore porro repellendus suscipit, animi deserunt
+                    expedita, alias magni distinctio.
+                    Tempora temporibus dolore vero non veritatis dolor earum voluptates, repellendus consequuntur sunt
+                    soluta sed neque officia! Nostrum natus reprehenderit quis aspernatur aut non, cum quod consequatur,
+                    voluptas accusantium hic dolorem!
+                    Nisi enim at, molestias tempora repellat culpa excepturi magni, officiis accusamus, quaerat sit ut
+                    non amet perferendis libero distinctio! Molestiae quas reprehenderit maiores ea cum temporibus
+                    perspiciatis doloribus fugiat saepe.
+                    Nam quae iste expedita officia minima porro qui reprehenderit fuga ratione quia aliquid, laudantium
+                    harum rem eligendi earum, itaque sequi molestias molestiae. Aliquid eos praesentium alias obcaecati
+                    voluptatibus. Excepturi, sapiente?
+                    Quo dignissimos architecto reprehenderit ab assumenda velit tempora iste iure. Maiores consequatur
+                    deserunt reprehenderit blanditiis, aliquid accusamus est molestias aperiam, explicabo ipsam quis,
+                    ipsa accusantium dolorum hic eligendi cumque odit?
+                    Repellat, ad est. Aut doloremque dolor iure officia. Itaque vero dolorum distinctio obcaecati natus
+                    earum dolores facilis hic dolor, nam quia provident aut vitae incidunt explicabo eos quidem eum
+                    inventore.</p>
+            </div>
+
+            <div class="item d-flex flex-row justify-content-between align-items-center m-auto  mt-4">
+                <h4 class="fs-6">Do you offer technical support for any issues that may arise?</h4>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="13" viewBox="0 0 20 13" fill="none">
+                    <path d="M18 2L10 10L2 2" stroke="#232323" stroke-width="3" stroke-linecap="round" />
+                </svg>
+            </div>
+            <div class="content hidden w-75 m-auto">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis corrupti sunt tempora cumque
+                    commodi rem exercitationem ea modi, iste consectetur debitis animi vel impedit molestias nesciunt
+                    delectus maiores asperiores dolor?
+                    Vero sunt assumenda veritatis possimus reprehenderit accusamus voluptates obcaecati ad reiciendis,
+                    corrupti exercitationem laboriosam quibusdam rem, esse consequatur, dolor laudantium maiores aut!
+                    Voluptatum atque corporis animi veniam nihil. Et, odio.
+                    Ut iure, placeat quo doloremque nemo eaque odit quos. Dolores beatae voluptatem non sunt eaque
+                    dignissimos similique ipsam sit obcaecati, inventore porro repellendus suscipit, animi deserunt
+                    expedita, alias magni distinctio.
+                    Tempora temporibus dolore vero non veritatis dolor earum voluptates, repellendus consequuntur sunt
+                    soluta sed neque officia! Nostrum natus reprehenderit quis aspernatur aut non, cum quod consequatur,
+                    voluptas accusantium hic dolorem!
+                    Nisi enim at, molestias tempora repellat culpa excepturi magni, officiis accusamus, quaerat sit ut
+                    non amet perferendis libero distinctio! Molestiae quas reprehenderit maiores ea cum temporibus
+                    perspiciatis doloribus fugiat saepe.
+                    Nam quae iste expedita officia minima porro qui reprehenderit fuga ratione quia aliquid, laudantium
+                    harum rem eligendi earum, itaque sequi molestias molestiae. Aliquid eos praesentium alias obcaecati
+                    voluptatibus. Excepturi, sapiente?
+                    Quo dignissimos architecto reprehenderit ab assumenda velit tempora iste iure. Maiores consequatur
+                    deserunt reprehenderit blanditiis, aliquid accusamus est molestias aperiam, explicabo ipsam quis,
+                    ipsa accusantium dolorum hic eligendi cumque odit?
+                    Repellat, ad est. Aut doloremque dolor iure officia. Itaque vero dolorum distinctio obcaecati natus
+                    earum dolores facilis hic dolor, nam quia provident aut vitae incidunt explicabo eos quidem eum
+                    inventore.</p>
+            </div>
+
+            <div class="item d-flex flex-row justify-content-between align-items-center m-auto  mt-4">
+                <h4 class="fs-6">How do I know that your promotion services will be effective for my business?</h4>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="13" viewBox="0 0 20 13" fill="none">
+                    <path d="M18 2L10 10L2 2" stroke="#232323" stroke-width="3" stroke-linecap="round" />
+                </svg>
+            </div>
+            <div class="content hidden w-75 m-auto">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis corrupti sunt tempora cumque
+                    commodi rem exercitationem ea modi, iste consectetur debitis animi vel impedit molestias nesciunt
+                    delectus maiores asperiores dolor?
+                    Vero sunt assumenda veritatis possimus reprehenderit accusamus voluptates obcaecati ad reiciendis,
+                    corrupti exercitationem laboriosam quibusdam rem, esse consequatur, dolor laudantium maiores aut!
+                    Voluptatum atque corporis animi veniam nihil. Et, odio.
+                    Ut iure, placeat quo doloremque nemo eaque odit quos. Dolores beatae voluptatem non sunt eaque
+                    dignissimos similique ipsam sit obcaecati, inventore porro repellendus suscipit, animi deserunt
+                    expedita, alias magni distinctio.
+                    Tempora temporibus dolore vero non veritatis dolor earum voluptates, repellendus consequuntur sunt
+                    soluta sed neque officia! Nostrum natus reprehenderit quis aspernatur aut non, cum quod consequatur,
+                    voluptas accusantium hic dolorem!
+                    Nisi enim at, molestias tempora repellat culpa excepturi magni, officiis accusamus, quaerat sit ut
+                    non amet perferendis libero distinctio! Molestiae quas reprehenderit maiores ea cum temporibus
+                    perspiciatis doloribus fugiat saepe.
+                    Nam quae iste expedita officia minima porro qui reprehenderit fuga ratione quia aliquid, laudantium
+                    harum rem eligendi earum, itaque sequi molestias molestiae. Aliquid eos praesentium alias obcaecati
+                    voluptatibus. Excepturi, sapiente?
+                    Quo dignissimos architecto reprehenderit ab assumenda velit tempora iste iure. Maiores consequatur
+                    deserunt reprehenderit blanditiis, aliquid accusamus est molestias aperiam, explicabo ipsam quis,
+                    ipsa accusantium dolorum hic eligendi cumque odit?
+                    Repellat, ad est. Aut doloremque dolor iure officia. Itaque vero dolorum distinctio obcaecati natus
+                    earum dolores facilis hic dolor, nam quia provident aut vitae incidunt explicabo eos quidem eum
+                    inventore.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="header w-100 p-2">
+        <div class="nav w-75 m-auto d-flex flex-row justify-content-between align-items-center">
+            <div class="d-flex flex-row align-items-center gap-3">
+                <div class="d-flex align-items-center flex-row gap-1">
+                    <svg class="mt-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none">
+                        <path
+                            d="M19.716 20.362C21.143 19.585 22 18.587 22 17.5C22 16.348 21.037 15.296 19.454 14.5C17.623 13.58 14.962 13 12 13C9.038 13 6.377 13.58 4.546 14.5C2.963 15.296 2 16.348 2 17.5C2 18.652 2.963 19.704 4.546 20.5C6.377 21.42 9.038 22 12 22C15.107 22 17.882 21.363 19.716 20.362Z"
+                            fill="#F85502" fill-opacity="0.4" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M9.25 4C9.25 3.27065 9.53973 2.57118 10.0555 2.05546C10.5712 1.53973 11.2707 1.25 12 1.25C12.7293 1.25 13.4288 1.53973 13.9445 2.05546C14.4603 2.57118 14.75 3.27065 14.75 4C14.75 4.72935 14.4603 5.42882 13.9445 5.94454C13.4288 6.46027 12.7293 6.75 12 6.75C11.2707 6.75 10.5712 6.46027 10.0555 5.94454C9.53973 5.42882 9.25 4.72935 9.25 4Z"
+                            fill="#F85502" />
+                        <path
+                            d="M8.22298 11.5739L6.04798 10.8489C5.67532 10.7259 5.36403 10.4647 5.17833 10.119C4.99262 9.77329 4.94664 9.36952 5.04988 8.99093C5.15312 8.61233 5.39771 8.28779 5.7332 8.08423C6.06869 7.88066 6.4695 7.8136 6.85298 7.89686L8.75098 8.30386L8.96098 8.34786C11.0365 8.77763 13.1796 8.76263 15.249 8.30386L17.146 7.89686C17.5297 7.81274 17.9311 7.87926 18.2672 8.08267C18.6033 8.28608 18.8484 8.61083 18.9519 8.98981C19.0554 9.3688 19.0093 9.77305 18.8232 10.119C18.6371 10.465 18.3252 10.7263 17.952 10.8489L15.777 11.5739C15.514 11.6619 15.383 11.7059 15.284 11.7669C15.1192 11.8685 14.9875 12.0157 14.9047 12.1907C14.822 12.3658 14.7919 12.561 14.818 12.7529C14.834 12.8679 14.884 12.9969 14.983 13.2559L16.23 16.4979C16.3641 16.8446 16.3622 17.2292 16.2245 17.5746C16.0869 17.92 15.8238 18.2005 15.4879 18.36C15.1521 18.5194 14.7684 18.546 14.4137 18.4343C14.0591 18.3226 13.7599 18.081 13.576 17.7579L12 14.9999L10.424 17.7569C10.2401 18.08 9.94083 18.3216 9.58622 18.4333C9.23161 18.545 8.84788 18.5184 8.51203 18.359C8.17618 18.1995 7.91304 17.919 7.77541 17.5736C7.63778 17.2282 7.63584 16.8436 7.76998 16.4969L9.01698 13.2559C9.11698 12.9969 9.16598 12.8679 9.18198 12.7529C9.20808 12.561 9.17794 12.3658 9.09522 12.1907C9.0125 12.0157 8.88076 11.8685 8.71598 11.7669C8.61698 11.7059 8.48598 11.6619 8.22298 11.5739Z"
+                            fill="#F85502" />
+                    </svg>
+                    <span class="text-muted d-flex align-items-center fs-4 fw-medium">Socpull</span>
+                </div>
+                <svg  class="d-none d-sm-flex" xmlns="http://www.w3.org/2000/svg" width="2" height="26" viewBox="0 0 2 26" fill="none">
+                    <path d="M1 1V25" stroke="#636363" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <div class="d-sm-flex flex-row align-items-center gap-1 d-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M4.172 3.172C3 4.343 3 6.229 3 10V14C3 17.771 3 19.657 4.172 20.828C5.343 22 7.229 22 11 22H13C16.771 22 18.657 22 19.828 20.828C21 19.657 21 17.771 21 14V10C21 6.229 21 4.343 19.828 3.172C18.657 2 16.771 2 13 2H11C7.229 2 5.343 2 4.172 3.172Z"
+                            fill="#F85502" fill-opacity="0.4" />
+                        <path
+                            d="M6 12C6 10.586 6 9.879 6.44 9.44C6.878 9 7.585 9 9 9H15C16.414 9 17.121 9 17.56 9.44C18 9.879 18 10.586 18 12V16C18 17.414 18 18.121 17.56 18.56C17.121 19 16.414 19 15 19H9C7.586 19 6.879 19 6.44 18.56C6 18.122 6 17.415 6 16V12ZM7 5.25C6.80109 5.25 6.61032 5.32902 6.46967 5.46967C6.32902 5.61032 6.25 5.80109 6.25 6C6.25 6.19891 6.32902 6.38968 6.46967 6.53033C6.61032 6.67098 6.80109 6.75 7 6.75H12C12.1989 6.75 12.3897 6.67098 12.5303 6.53033C12.671 6.38968 12.75 6.19891 12.75 6C12.75 5.80109 12.671 5.61032 12.5303 5.46967C12.3897 5.32902 12.1989 5.25 12 5.25H7Z"
+                            fill="#F85502" />
+                    </svg>
+                    <a href="/services" class="text-secondary fw-medium">Servises</a>
+                </div>
+            </div>
+            <div class="d-flex flex-row align-items-center gap-3">
+                <a href="/login" class="text-black fw-medium d-none d-sm-flex">Login</a>
+                <a href="/reg" class="sign-up btn btn-primary">Sign Up</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>
